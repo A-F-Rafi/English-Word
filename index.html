@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/dbecc074e1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>English Janala</title>
+</head>
+
+<body>
+
+
+    <header id="navbar" class="sticky top-0 z-50">
+        <nav class="shadow-md bg-gray-100 ">
+            <div class="w-11/12 mx-auto  py-6 flex justify-between">
+                <div class="flex items-center font-bold">
+                    <p>ENGLISH</p>
+                    <img src="assets/logo.png" alt="">
+                    <p>জানালা</p>
+                </div>
+                <div class="flex gap-4 ">
+                    
+                    <button class="btn btn-dash btn-primary"><a href="#toggle"><i class="fa-solid fa-book-open"></i> Learn</a></button>
+                    <button  class="btn btn-dash btn-primary"> <a href="#toggle_2"><i class="fa-solid fa-circle-question"></i>
+                        FAQ</a></button>
+                    <button id="logut" class="btn btn-dash btn-primary"><i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        Logout</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="banner" class="mb-20 py-20">
+            <div class="flex gap-10 w-11/12 mx-auto items-center justify-between">
+                <div class="">
+                    <h1 class="text-4xl font-bold"><span class="text-blue-400">English</span> is Easy!!</h1>
+                    <p>আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা <br> আপনার দক্ষতা বাড়াতে চান,
+                        আমাদের Interactive Lessons আপনাকে নিয়ে <br> যাবে অন্য একটি Level এ</p>
+                    <input id="Acount_name" value="test" class="pr-16 pl-4 py-2 my-4 border-gray-300" type="text" placeholder="Enter your name">
+                    <br>
+                    <input id="pin" value="123456" class="pr-16 pl-4 py-2 border-gray-300" type="text" placeholder=".........">
+                    <br>
+                    <button id="Get_Started" class="btn btn-primary mt-4">Get Started</button>
+                </div>
+                <div>
+                    <img src="assets/hero-student.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section  id="toggle" class="mb-20 py-20">
+            <div class="w-11/12 mx-auto">
+                <div class="flex justify-center mb-6">
+                    <h2 class="text-3xl font-bold"><span class="text-blue-400">Let's</span> Learn Vocabularies</h2>
+                </div>
+                <div id="allButton" class="flex justify-center gap-6">
+                    
+                </div>
+                <div id="allCard" class="grid grid-cols-3 mt-6 gap-4 bg-slate-200 p-6 ">
+                  
+
+                    <div
+                        class="bg-slate-100 py-20 w-11/12 mx-auto mt-6 rounded-xl col-span-full flex flex-col justify-center items-center text-center">
+                        <p class="flex justify-center">আপনি এখনো কোন Lesson Select করেন নি</p>
+                        <p class="text-2xl text-gray-600 font-bold flex justify-center">একটি Lesson Select করুন।</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <div>
+           
+            <dialog id="Card_details" class="modal">
+                <div class="modal-box">
+                    <div id="details-container">
+                        <p id="synonyms"></p>
+                        
+
+                    </div>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            
+                            <button class="btn btn-primary">Complete Learning</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+        </div>
+        <section id="toggle_2" class="mb-20 py-20">
+            <div class="w-11/12 mx-auto ">
+                <div class="flex justify-center mb-6">
+                    <h2 class="text-3xl font-bold"><span class="text-blue-400">Frequently</span> Asked Questions</h2>
+                </div>
+                <div>
+                    <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title font-semibold"> The difference between var, let, and const</div>
+                        <div class="collapse-content text-sm">var (Function and global-scoped, Hoisted, Can be Reassigned), let (Block-scoped, Can be Reassigned), const (Block-scoped,  Cannot be Reassigned)</div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title font-semibold"> The difference between map(), forEach(), and filter()
+                        </div>
+                        <div class="collapse-content text-sm"> map( )Creates a new array, Return Value , forEach() No Return Value , Iterates, filter()  Condition Based , Creates a new array.</div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title font-semibold"> Explain arrow functions and how they are different
+                            from regular functions</div>
+                        <div class="collapse-content text-sm">Arrow functions are introduced in ES6, Arrow functions use =>.
+                            Regular functions use function words.</div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title font-semibold">How JavaScript Promises work</div>
+                        <div class="collapse-content text-sm">A Promise in JavaScript is an object that represents the eventual completion (or failure) of an asynchronous operation. It allows you to handle asynchronous tasks in a cleaner way compared to callbacks.</div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title font-semibold"> How closures work in JavaScript</div>
+                        <div class="collapse-content text-sm">A closure in JavaScript is a function that "remembers" the variables from its outer scope even after the outer function has finished executing. This allows a function to retain access to variables from its parent function, even when it is executed later.</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="w-11/12 mx-auto py-20">
+            <div class="flex items-center font-bold">
+                <p>ENGLISH</p>
+                <img src="assets/logo.png" alt="">
+                <p>জানালা</p>
+            </div>
+            <div class="flex justify-between">
+                <div>
+                    <p class="my-2">ইংরেজি শিখুন সহজে</p>
+                    <p>Providing ED-Tech Applications since 2025</p>
+
+                </div>
+                <div>
+                    <p>Follow us</p>
+                    <div class="flex gap-4 mt-4">
+                        
+                        <a href="https://www.youtube.com/" target="_blank"><img src="assets/youtube-thumb.png" alt=""></a>
+                        <a href="https://web.facebook.com/abdulfattahrafi" target="_blank">
+                            <img src="assets/fb-thumb.png" alt="">
+                        </a>
+                    
+                        <a href="https://www.instagram.com/" target="_blank"> <img src="assets/instagram-thumb.png" alt=""></a>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

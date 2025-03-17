@@ -1,0 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+.active {
+    background: #1f2aff;
+    color: white;
+  }
