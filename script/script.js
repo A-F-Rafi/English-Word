@@ -126,7 +126,7 @@ function displayButton(buttons) {
         const buttonDiv = document.createElement("div");
 
         buttonDiv.innerHTML = `
-          <button id="btn-${btn.level_no}"onclick="loadlesoncard(${btn.level_no})" class="btn btn-dash btn-primary"><i class="fa-solid fa-book-open"></i>Lesson- ${btn.level_no}</button>
+          <button id="btn-${btn.level_no}" onclick="loadlesoncard(${btn.level_no})" class="btn btn-dash btn-primary"><i class="fa-solid fa-book-open"></i>Lesson- ${btn.level_no}</button>
           `;
         buttonContainer.append(buttonDiv);
     }
